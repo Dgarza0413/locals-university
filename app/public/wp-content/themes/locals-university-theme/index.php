@@ -1,11 +1,12 @@
 <?php
-    function bloginfo($name, $color){
+    function greet($name, $color){
         echo "<p>Hello $name, color $color</p>";
     }
 
-    bloginfo('John', 'blue');
-    bloginfo('Jane', 'color');
+    greet('John', 'blue');
+    greet('Jane', 'color');
 
 ?>
 
-<h1><?php bloginfo() ?></h1>
+<h1><?php bloginfo('name') ?></h1>
+<p><?php bloginfo('description') ?></p>
